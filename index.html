@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form id="form" class="form" novalidate>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your Username " />
+                <small aria-live="polite"></small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email " />
+                <small aria-live="polite"></small>
+            </div>
+            <div class="form-control">
+                <label for="Phone No">Contact</label>
+                <input type="text" id="Contact" placeholder="Enter your Phone no " />
+                <small aria-live="polite"></small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your Password " />
+                <small aria-live="polite"></small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Check Password" />
+                <small aria-live="polite"></small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="success-message" class="success-message">
+            <div class="success-content">
+                <span class="close-button" id="close-button">&times;</span>
+                <h2>Registration Successful!</h2>
+                <p>Your account has been created successfully.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

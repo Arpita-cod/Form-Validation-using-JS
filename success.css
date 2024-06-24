@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #74ebd5, #c257c2);
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    
+}
+
+.success-container {
+    background-color: #bb77d7;
+    text-align: center;
+    height: 30vh;
+    width: 50vw;
+    background: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+.success-message h1 {
+    font-size: 2.5em;
+    color: #2ecc71;
+    margin-bottom: 20px;
+    animation: slideInFromTop 1s ease-out;
+}
+
+.success-message p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 30px;
+    animation: slideInFromTop 1.5s ease-out;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #813096;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #732d91;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
