@@ -30,7 +30,7 @@ body::before {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url('/pxl.jpg') no-repeat center center fixed;
+    background: url('./pxl.jpg') no-repeat center center fixed;
     background-size: cover;
     filter: blur(3px); /* Adjust the blur level as needed */
     z-index: -1;
